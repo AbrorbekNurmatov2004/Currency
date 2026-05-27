@@ -1,0 +1,10 @@
+spring:
+  mongodb:
+    database: currency
+    host: localhost
+    port: 27017
+
+application:
+  bot-token: 8602613547:AAEuy73sLRVLHwslXYHf7CorcPEFXJ4dYi0
+  bot-username: cashierflowsbots_bot
+  centeral-bank-api: https://cbu.uz/uz/arkhiv-kursov-valyut/json/
