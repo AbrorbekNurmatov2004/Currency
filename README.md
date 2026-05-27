@@ -82,3 +82,10 @@ src/main/java
 └── utils/
     ├── ErrorConstants.java
     └── Utility.java
+
+---
+```
+
+## 🤖 Bot Link
+Siz botni Telegram'da quyidagi havola orqali sinab ko'rishingiz mumkin:  
+👉 [@cashierflowsbots_bot](https://t.me/cashierflowsbots_bot)
