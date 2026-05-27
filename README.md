@@ -27,7 +27,7 @@ An enterprise-ready Telegram bot system built with **Java 17** and **Spring Boot
 [ Telegram User ] ──➔  [ Telegram Bot Engine ] ──➔ [ Service Layer ] ──➔ [ MongoDB ]
 ```
 
-🚀 Key Features
+## 🚀 Key Features
 
 🤖 Core Telegram Bot Engine
 
@@ -37,19 +37,24 @@ An enterprise-ready Telegram bot system built with **Java 17** and **Spring Boot
 🌐 Localization – Full multi-language layout support (Language enum) seamlessly adapting buttons and localized alert frameworks dynamically.
 
 
-🗄️ Backend & Data Resilience
+## 🗄️ Backend & Data Resilience
 
 🍃 Scalable NoSQL Storage – Utilizing MongoDB to efficiently query, store, and mutate volatile user preferences and sessions without standard relational overhead.
 🔌 Resilient HTTP Client Architecture – Built-in failover capabilities utilizing robust RestTemplate configurations to fetch structured JSON data from external banking endpoints.
 🎯 Centralized Error Layouts – Global unexpected flow management (GlobalExceptionHandler) to ensure the Telegram polling layer never crashes on third-party API response inconsistencies.
 
 
-📐 Code Quality & Architecture Best Practices
+## 📐 Code Quality & Architecture Best Practices
 
 🏗️ Low Coupling, High Cohesion – Strict boundary separation where Handler classes act as traffic controllers, routing payloads immediately out of the Telegram threads into specialized Services.
 📦 Domain Modeling and DTO Separation – Prevents leaking third-party JSON formats deep into the software layout by abstracting external payloads into strict dto classes before processing.
 🔒 Immutable Design Constants – Critical UI notifications, database boundaries, and system metrics are cleanly isolated inside static utilities (ErrorConstants, Utility) preventing runtime state contamination.
 
+---
+
+## 📂 Project Structure
+
+```text
 src/main/java
 ├── CurrancyBotApplication.java
 ├── ButtonMaker.java
@@ -75,5 +80,5 @@ src/main/java
 │   ├── RemoteApiService.java
 │   └── TelegramService.java
 └── utils/
-├── ErrorConstants.java
-└── Utility.java
+    ├── ErrorConstants.java
+    └── Utility.java
